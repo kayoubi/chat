@@ -14,8 +14,7 @@ var server = http.createServer(function (request, response) {
         filePath = 'public' + request.url;
     }
 
-    var absPath = './chat/' + filePath;
-    serveStatic(response, cache, absPath);
+    serveStatic(response, cache, filePath);
 
 });
 
