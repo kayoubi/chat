@@ -19,8 +19,8 @@ var server = http.createServer(function (request, response) {
 
 });
 
-server.listen(3000, function() {
-    console.log('Server running at http://localhost:3000/');
+server.listen(80, function() {
+    console.log('Server running at http://localhost:80/');
 });
 
 var chatServer = require('./lib/chat_server');
